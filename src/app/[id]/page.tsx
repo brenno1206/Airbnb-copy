@@ -249,7 +249,7 @@ export default async function AccommodationPage({
         <SearchBar />
       </header>
       <main className="container mx-auto py-6">
-        <h1 className="text-3xl font-semibold">{accommodation.title}</h1>
+        <h1 className="text-3xl font-semibold pb-2">{accommodation.title}</h1>
         <Gallery photos={accommodation.photos} />
         <section className="flex flex-col md:flex-row">
           <AccommodationTestimonials />
