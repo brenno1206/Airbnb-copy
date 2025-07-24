@@ -145,7 +145,7 @@ const HorizontalTabbedNavigation = () => {
         {icons.map((icon, index) => (
           <SwiperSlide key={index}>
             <Link
-              href={icon.url}
+              href={'/'}
               className="flex flex-col items-center hover:text-red-500 justify-center text-center"
             >
               <Image

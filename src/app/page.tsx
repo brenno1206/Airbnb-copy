@@ -2,6 +2,7 @@ import Header from '@/widgets/Header';
 import SearchBar from '@/widgets/SearchBar';
 import HorizontalTabbedNavigation from '@/widgets/HorizontalTabbedNavigation';
 import Accommodations from '@/widgets/Accommodations';
+import Footer from '@/widgets/Footer';
 
 export default function Home() {
   return (
@@ -10,12 +11,14 @@ export default function Home() {
         <Header />
         <SearchBar />
       </header>
-      <hr className="my-3 text-gray-300" />
+      <hr className="my-5 text-gray-300" />
       <main className="container mx-auto">
         <HorizontalTabbedNavigation />
         <Accommodations />
       </main>
-      <footer className="container mx-auto">Rodapé</footer>
+      <footer className="bg-gray-200">
+        <Footer />
+      </footer>
     </>
   );
 }
