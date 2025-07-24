@@ -146,7 +146,7 @@ const HorizontalTabbedNavigation = () => {
           <SwiperSlide key={index}>
             <Link
               href={icon.url}
-              className="flex flex-col items-center hover:text-red-500 justify-center "
+              className="flex flex-col items-center hover:text-red-500 justify-center text-center"
             >
               <Image
                 src={icon.source}
