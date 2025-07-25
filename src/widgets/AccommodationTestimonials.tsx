@@ -1,7 +1,6 @@
 import { IconStarFilled } from '@/assets/icons';
 import { TestimonialsPrototype } from '@/types/AirbnbData';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
 
 interface AccommodationTestimonialsProps {
   testimonials: TestimonialsPrototype[];
