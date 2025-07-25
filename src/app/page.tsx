@@ -3,8 +3,10 @@ import SearchBar from '@/widgets/SearchBar';
 import HorizontalTabbedNavigation from '@/widgets/HorizontalTabbedNavigation';
 import Accommodations from '@/widgets/Accommodations';
 import Footer from '@/widgets/Footer';
+import { fetchData } from '@/utils/api';
 
-export default function Home() {
+export default async function Home() {
+  const data = await fetchData();
   return (
     <>
       <header className="container mx-auto">
@@ -13,8 +15,8 @@ export default function Home() {
       </header>
       <hr className="my-5 text-gray-300" />
       <main className="container mx-auto">
-        <HorizontalTabbedNavigation />
-        <Accommodations />
+        <HorizontalTabbedNavigation icons={data.icons} />
+        <Accommodations accommodation={data.accommodation} />
       </main>
       <footer className="bg-gray-200">
         <Footer />
